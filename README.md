@@ -1,10 +1,11 @@
-# DocstringTranslationExoBackend.jl
+# [DocstringTranslationExoBackend.jl](https://github.com/AtelierArith/DocstringTranslationExoBackend.jl/tree/main)
 
 <img width="862" alt="image" src="https://github.com/user-attachments/assets/2519cb7e-92ae-4cd1-9bcf-3e130bd72dd6">
 
 ## Description
 
-This Julia package inserts Large Language Model (LLM) hooks into the API in the `Base.Docs module`, giving non-English speaking users the opportunity to help smooth API comprehension.
+This Julia package [DocstringTranslationExoBackend.jl](https://github.com/AtelierArith/DocstringTranslationExoBackend.jl/tree/main)
+ inserts Large Language Model (LLM) hooks into the API in the `Base.Docs module`, giving non-English speaking users the opportunity to help smooth API comprehension.
 
 ## Prerequisite
 
