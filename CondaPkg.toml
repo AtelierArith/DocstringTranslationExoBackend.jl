@@ -1,0 +1,5 @@
+channels = ["conda-forge"]
+
+[pip.deps]
+exo = "@https://github.com/exo-explore/exo.git"
+tensorflow = ""
