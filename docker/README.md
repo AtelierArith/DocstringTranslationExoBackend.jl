@@ -1,3 +1,5 @@
-```
-docker build -t exojl -f Dockerfile . &&  docker run --rm exojl
+# Dockerfile
+
+```sh
+$ docker build -t exojl -f Dockerfile . &&  docker run --rm -it exojl
 ```

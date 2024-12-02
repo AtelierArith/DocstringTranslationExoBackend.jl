@@ -7,6 +7,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-ins
     curl \
     ca-certificates \
     libopencv-dev \
+    clang \
     git \
     && \
     apt-get clean && \
