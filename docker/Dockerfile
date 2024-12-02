@@ -6,6 +6,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-ins
     build-essential \
     curl \
     ca-certificates \
+    libopencv-dev \
     git \
     && \
     apt-get clean && \
@@ -14,7 +15,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-ins
 USER ubuntu
 
 RUN curl -fsSL https://install.julialang.org | sh -s -- --yes --default-channel=nightly
-ENV PATH /home/ubuntu/.juliaup/bin:$PATH
+ENV PATH=/home/ubuntu/.juliaup/bin:$PATH
 RUN julia --version
 
 WORKDIR /home/ubuntu
@@ -24,4 +25,5 @@ RUN cd DocstringTranslationExoBackend.jl && \
     julia --project -e 'using Pkg; Pkg.instantiate()' && \
     julia --project -e 'using PythonCall'
 
+EXPOSE 52415
 ENTRYPOINT ["julia", "/home/ubuntu/DocstringTranslationExoBackend.jl/serveexo.jl"]
