@@ -25,5 +25,8 @@ RUN cd DocstringTranslationExoBackend.jl && \
     julia --project -e 'using Pkg; Pkg.instantiate()' && \
     julia --project -e 'using PythonCall'
 
+WORKDIR /home/ubuntu/DocstringTranslationExoBackend.jl
+
 EXPOSE 52415
-ENTRYPOINT ["julia", "/home/ubuntu/DocstringTranslationExoBackend.jl/serveexo.jl"]
+
+ENTRYPOINT ["julia", "--project", "serveexo.jl"]
