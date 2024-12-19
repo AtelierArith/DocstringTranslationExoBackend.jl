@@ -4,3 +4,4 @@ channels = ["conda-forge"]
 exo = "@https://github.com/exo-explore/exo.git"
 tensorflow = ""
 opencv-python = ""
+llvmlite = ""
